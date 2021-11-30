@@ -4,7 +4,7 @@ A.  Create two linux servers,
      server1 => install and configure kibana and elasticsearch with basic username and password authentication
      server2 => install and configure metricbeat.
 
-   Collect metric from following sources in server1 and send them to elasticsearch. Store them in an index named "server1-metrics".
+B.   Collect metric from following sources in server1 and send them to elasticsearch. Store them in an index named "server1-metrics".
     a. Memory usage
     b. Disk usage
     c. Load average
