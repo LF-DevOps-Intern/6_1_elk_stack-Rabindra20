@@ -5,7 +5,7 @@
 Steps:-<br/>
 There is two way to send data to elasticsearch <br/>
 1. Install Metricbeat on the Elastic Stack server and import all the needed data, then install and configure the client on the second Ubuntu server.
-2. Create index manually in kibana webpage
+2. Install and configure the client on the second Ubuntu server and Create index manually in kibana webpage
 
 Installing and Configuring the metricbeat<br/>
 Install the remaining components of the Elastic Stack using apt<br/>
