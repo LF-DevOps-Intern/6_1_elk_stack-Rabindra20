@@ -5,7 +5,7 @@
 Steps:-<br/>
 There is two way to send data to elasticsearch <br/>
 1. Install Metricbeat on the Elastic Stack server and import all the needed data, then install and configure the client on the second Ubuntu server.
-2. Create yml file in server2 with all module and send data to elasticsearch through output plugin
+2. Create index manually in kibana webpage
 
 Installing and Configuring the metricbeat<br/>
 Install the remaining components of the Elastic Stack using apt<br/>
@@ -15,7 +15,13 @@ sudo apt-get update && sudo apt-get install metricbeat
 ```
 ![install](https://user-images.githubusercontent.com/53372486/144089537-33dbac26-7289-4cd7-993a-3d62655c9537.png)<br/>
 
-Edit metricbeat file<br/>
+Check system.yml<br/>
+```
+sudo nano /etc/metricbeat/modules.d/system.yml
+```
+![systemyml](https://user-images.githubusercontent.com/53372486/144186194-4834b446-d5e1-4643-a964-d3cde604ab69.png)<br/>
+
+Edit metricbeat.yml file<br/>
 ```
 /etc/metricbeat/metricbeat.yml
 ```
@@ -51,8 +57,11 @@ sudo systemctl status metricbeat
 
 Click on discovery to view data in webpage<br/>
 
-![data](https://user-images.githubusercontent.com/53372486/144166576-4bfd8f8c-dccf-4c47-b511-78ed8df083f1.png)
+![data](https://user-images.githubusercontent.com/53372486/144166576-4bfd8f8c-dccf-4c47-b511-78ed8df083f1.png)<br/>
 
+click on stream > add rule <br/>
+
+![datastream](https://user-images.githubusercontent.com/53372486/144184085-b7168c3a-3cac-443c-8e80-d20ba388234d.png)<br/>
 
 
 

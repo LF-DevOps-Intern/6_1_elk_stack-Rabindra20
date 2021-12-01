@@ -7,7 +7,7 @@ click on stack mangement > click on 30 day trial<br/>
 
 ![licence](https://user-images.githubusercontent.com/53372486/144167159-9ae5b5f6-cb70-434c-b430-a203003c2db1.png)<br/>
 
-then click on rules > create rules  > add pattern And click on continue<br/>    
+then click on Security > click on rules >create rules  > add pattern And click on continue<br/>    
 
 ![pattern](https://user-images.githubusercontent.com/53372486/144167171-fc2294a4-1ab0-41f8-8fbb-a4b023441852.png)<br/>
 
