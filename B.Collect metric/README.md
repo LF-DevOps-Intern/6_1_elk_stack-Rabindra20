@@ -19,7 +19,7 @@ Edit metricbeat file<br/>
 ```
 /etc/metricbeat/metricbeat.yml
 ```
-Add below lines in kibana.yml<br/>
+Add below lines in metricbeat.yml<br/>
 ```
 hosts: ["192.168.141.128:9200"]
 elasticsearch.username: "kibana_system"
@@ -31,13 +31,13 @@ To load the index template into Elasticsearch. An Elasticsearch index is a colle
 ```
 sudo metricbeat setup --template -E 'output.elasticsearch.hosts=["192.168.141.128:9200"]'
 ```
-![setup](https://user-images.githubusercontent.com/53372486/144089544-02be93ce-1e70-4327-a75d-f36354fcb95d.png)<br/>
+![index setup](https://user-images.githubusercontent.com/53372486/144089565-31fbc8a3-eff1-487c-bf60-43790359627a.png)<br/>
 
 Metricbeat comes packaged with example Kibana dashboards, visualizations, and searches for visualizing Metricbeat data in Kibana<br/>
 ```
 sudo metricbeat setup -e -E output.elasticsearch.hosts=['192.168.141.128:9200'] -E setup.kibana.host=192.168.141.128:5601
 ```
-![index setup](https://user-images.githubusercontent.com/53372486/144089565-31fbc8a3-eff1-487c-bf60-43790359627a.png)<br/>
+![setup](https://user-images.githubusercontent.com/53372486/144089544-02be93ce-1e70-4327-a75d-f36354fcb95d.png)<br/>
 
 Start metricbeat<br/>
 ```
@@ -48,6 +48,10 @@ sudo systemctl start metricbeat
 sudo systemctl status metricbeat
 ```
 ![status](https://user-images.githubusercontent.com/53372486/144089552-84ea01b1-d93a-4301-b9d1-eecab744f8b9.png)<br/>
+
+Click on discovery to view data in webpage<br/>
+
+![data](https://user-images.githubusercontent.com/53372486/144166576-4bfd8f8c-dccf-4c47-b511-78ed8df083f1.png)
 
 
 

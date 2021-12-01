@@ -82,6 +82,7 @@ Add below lines in kibana.yml<br/>
 server.host: "0.0.0.0"
 elasticsearch.username: "kibana_system"
 elasticsearch.password: "Rabindra@1"
+xpack.encryptedSavedObjects.encryptionKey: "gggfsghgjdfakghjydygdsahjabdjkdhdhk
 ```
 Start kibana <br/>
 ```
@@ -100,7 +101,7 @@ Display<br/>
 
 After configure with elasticsearch<br/>
 ![login](https://user-images.githubusercontent.com/53372486/144078584-5602373b-fa87-4438-ba65-0af66fc42668.png)<br/>
-![home](https://user-images.githubusercontent.com/53372486/144078574-6b98c720-4b9d-4e0a-b77f-8501601eb588.png)<br/>
+
 
 ------------------------------------------------------<br/>
 #   server2 => install and configure metricbeat.
@@ -133,7 +134,7 @@ Edit metricbeat file<br/>
 ```
 /etc/metricbeat/metricbeat.yml
 ```
-Add below lines in kibana.yml<br/>
+Add below lines in metricbea.yml<br/>
 ```
 hosts: ["192.168.141.128:9200"]
 elasticsearch.username: "kibana_system"
